@@ -13,7 +13,7 @@ describe ApplicationHelper do
     context 'when page_title is empty' do
       let(:page_title) { '' }
 
-      it 'is the base title and the page title combined' do
+      it 'is just the base title' do
         expect(helper.full_title(page_title)).to eq 'Ruby on Rails Tutorial Sample App'
       end
     end
