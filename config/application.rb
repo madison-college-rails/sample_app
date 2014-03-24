@@ -27,5 +27,8 @@ module SampleApp
 
     # for bootstrap-sass
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+    # fix deprecation warning
+    I18n.enforce_available_locales = true
   end
 end
